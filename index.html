@@ -93,7 +93,7 @@
             background: rgba(255, 255, 255, 0.2);
             color: #ccc;
             position: fixed;
-            z-index: 100;
+            z-index: 1000;
             transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
         }
 
@@ -140,8 +140,8 @@
         const celebration = document.getElementById('celebration');
 
         // Initial position of No button
-        noBtn.style.left = (window.innerWidth / 2 + 60) + 'px';
-        noBtn.style.top = (window.innerHeight / 2 + 120) + 'px';
+        noBtn.style.left = (window.innerWidth / 2 + 10) + 'px';
+        noBtn.style.top = (window.innerHeight / 2 + 10) + 'px';
 
         function moveNo() {
             const maxX = window.innerWidth - noBtn.offsetWidth;
